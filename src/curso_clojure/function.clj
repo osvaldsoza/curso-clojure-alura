@@ -28,7 +28,19 @@
 (println (map valor-descontado precos))
 
 (println (filter aplica-desconto? precos))
+
+(println "total de precos:" (reduce + 0 precos))
+(println "total de precos com desconto" (reduce + (filter aplica-desconto? precos)))
 ;(println (valor-descontado 1000))
+
+
+(defn reduce-custom
+  [valor1 valor2]
+  (println "soma" valor1 "+" valor2)
+  (+ valor1 valor2))
+
+(println "----- reduce-custom -----")
+(println "reduce-custom" (reduce reduce-custom 0 precos))
 
 ;(println "---------------------------")
 ;(println "Utilizando funcoes anonimas")
