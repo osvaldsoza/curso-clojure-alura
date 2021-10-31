@@ -8,7 +8,7 @@
 (defn mais-caro-que-100? [valor-bruto] (> valor-bruto 100))
 
 ; funcao anonima
-(fn [valor-bruto] (> valor-bruto 100))
+;(fn [valor-bruto] (> valor-bruto 100))
 
 (defn valor-descontado
   [aplica? valor-bruto]
